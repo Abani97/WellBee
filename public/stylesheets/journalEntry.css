@@ -1,0 +1,256 @@
+:root {
+    --editor-color: #FFEBE5;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Puvi', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #442433;
+    color: #FFFCF4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.logo {
+    /* font-size: 20px;
+    font-weight:bold; */
+    height: 120px;
+    /* border:1px solid pink; */
+    width: 120px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    padding: 30px 45px;
+    /* border:1px solid yellow; */
+    /* height:100%; */
+    width: 100%;
+}
+
+.top-bar {
+    /* border:1px solid black; */
+    /* height:60px; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-wrapper {
+    /* border:1px solid yellow; */
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.back-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.entry-details {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    width: 64px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 10px 10px;
+    border-right: 2px solid black;
+}
+
+.day-month-wrapper {
+    /* border:1px solid blue; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.day {
+    color: #808080;
+}
+
+.emoji-wrapper {
+    display: flex;
+    /* height: 56px; */
+    /* width: 56px; */
+    /* border: 1px solid pink; */
+    /* padding: 8px; */
+    /* background-color: #FFEFEB; */
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.emoji {
+    border-radius: 8px;
+    background-color: #FFEFEB;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.emoji img {
+    height: 40px;
+    width: 40px;
+}
+
+.emojiList {
+    display: flex;
+    height: 56px;
+    gap: 5px;
+    width: 0;
+    overflow: hidden;
+    transition: .2s;
+
+    .emoji:hover {
+        scale: 0.96;
+    }
+}
+
+.right-wrapper {
+    /* border:1px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.color-choices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.choice {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 100%;
+}
+
+.choice-1 {
+    background-color: #FF936E;
+}
+
+.choice-2 {
+    background-color: #95C6FF;
+}
+
+.choice-3 {
+    background-color: #979BFF;
+}
+
+.choice-4 {
+    background-color: #B4FFC0;
+}
+
+.active-choice {
+    border: 1px solid #442433;
+}
+
+.save-btn {
+    /* border:1px solid black; */
+    height: 36px;
+    width: 80px;
+}
+
+.save-btn button {
+    height: 100%;
+    width: 100%;
+    background-color: #268AFF;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.entry-page {
+    /* border: 1px solid blue; */
+    margin-top: 40px;
+    height: 800px;
+    background-color: var(--editor-color);
+    border: 1px solid #442433;
+}
+
+#journalTitle {
+    text-align: center;
+    border: none;
+    outline: transparent;
+    width: 100%;
+    background-color: transparent;
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 1.7rem;
+}
+
+#editor {
+    height: 100%;
+}
+
+/* CK Editor */
+.ck-editor__editable[role="textbox"] {
+    min-height: 200px;
+    height: 100%;
+}
+
+.ck-content .image {
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners,
+.ck.ck-toolbar>.ck-toolbar__items,
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    background-color: var(--editor-color);
+    border-color: #442433 !important;
+    border-right: none;
+    border-left: none;
+}

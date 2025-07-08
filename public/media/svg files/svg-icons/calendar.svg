@@ -1,0 +1,14 @@
+<svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 14.5V7C24 5.34315 22.6569 4 21 4H4C2.34315 4 1 5.34315 1 7V22C1 23.6569 2.34315 25 4 25H13" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M23 21.5L24.6464 19.8536C24.8417 19.6583 24.8417 19.3417 24.6464 19.1464L22.8536 17.3536C22.6583 17.1583 22.3417 17.1583 22.1464 17.3536L20.5 19M23 21.5L20.5 19M23 21.5L19.068 25.432C19.0238 25.4762 18.9668 25.5055 18.9052 25.5158L16.8286 25.8619C16.4225 25.9296 16.0704 25.5775 16.1381 25.1714L16.4842 23.0948C16.4945 23.0332 16.5238 22.9762 16.568 22.932L20.5 19" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M7 1V6" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M19 1V6" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+<circle cx="8" cy="11" r="1" fill="white"/>
+<circle cx="13" cy="11" r="1" fill="white"/>
+<circle cx="18" cy="11" r="1" fill="white"/>
+<circle cx="8" cy="15" r="1" fill="white"/>
+<circle cx="13" cy="15" r="1" fill="white"/>
+<circle cx="18" cy="15" r="1" fill="white"/>
+<circle cx="8" cy="19" r="1" fill="white"/>
+<circle cx="13" cy="19" r="1" fill="white"/>
+</svg>

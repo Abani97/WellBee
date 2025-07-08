@@ -1,0 +1,133 @@
+.calendar-section-wrapper {
+    /* border: 1px solid pink; */
+    height: 40%;
+    max-height: 364px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 15px;
+    transition: 1.2s 0.4s;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 352px;
+    padding: 0px 10px;
+
+    & button {
+        border: 1px solid;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        border-radius: 50%;
+        font-size: 16px;
+        transition: .2s;
+
+        &:hover {
+            scale: 1.02;
+        }
+
+        &:active {
+            scale: 0.98;
+        }
+    }
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.monthYear {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.days {
+    display: flex;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+
+.singleDay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.dayName {
+    aspect-ratio: 1;
+}
+
+.activeDay {
+    color: #3793FF;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date {
+    /* border: 1px solid; */
+    width: calc(100%/7);
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    padding: 0px;
+    /* aspect-ratio: 0.8; */
+    border-radius: 8px;
+}
+
+.withDates {
+    height: auto;
+    cursor: pointer;
+    height: 40px;
+
+    &:hover {
+        background-color: #c9e7f9;
+
+        & p {
+            color: #12100e;
+        }
+    }
+}
+
+.emoji {
+    width: 80%;
+    max-width: 25px;
+}
+
+.selectedMood {
+    transition: .3s;
+    background-color: rgb(255 255 255 / 0.6);
+}
+
+#meditation-graph {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+
+@media screen and (min-width: 1024px) {
+    .calendar {
+        max-width: 500px;
+    }
+
+    .header-info {
+        max-width: 502px;
+    }
+}

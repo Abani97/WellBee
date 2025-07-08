@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+
+:root {
+    /* meditation pallete */
+    --meditation-color-1: #FEE4D3;
+    --meditation-color-2: #E76B49;
+    --meditation-color-3: #F2A293;
+    --meditation-color-4: #B8BD7D;
+    --meditation-color-5: #9C9C82;
+    --meditation-color-6: #EDCAB6;
+    --meditation-color-7: #FFFAF4;
+
+
+    /* pigeon pallete */
+    --pigeon-color-1: #4A1A1A;
+    --pigeon-color-2: #FFF1E4;
+    --pigeon-color-3: #D6E2B2;
+    --pigeon-color-4: #638A5B;
+    --pigeon-color-5: #FF8838;
+    --pigeon-color-6: #F9957B;
+    --pigeon-color-7: #B66E48;
+
+    /* women with phone pallete */
+
+    --women-phone-color-1: #533149;
+    --women-phone-color-2: #F99691;
+    --women-phone-color-3: #FFD3B4;
+    --women-phone-color-4: #ED9A6E;
+    --women-phone-color-5: #9FAB83;
+    --women-phone-color-6: #BAC5A7;
+    --women-phone-color-7: #C56042;
+
+    /* smol-girl pallete */
+    --smol-girl-color-1: #85D3F0;
+    --smol-girl-color-2: #FFE9E2;
+    --smol-girl-color-3: #FFB2AD;
+    --smol-girl-color-4: #FFC286;
+    --smol-girl-color-5: #FF8281;
+    --smol-girl-color-6: #FFEFEC;
+    --smol-girl-color-7: #FFFFFF;
+
+
+    /* she-looking-into-the-mirror */
+    --mirror-girl-color-1: #0F2D35;
+    --mirror-girl-color-2: #FDF0D0;
+    --mirror-girl-color-3: #F48C7F;
+    --mirror-girl-color-4: #3C8F7D;
+    --mirror-girl-color-5: #355389;
+    --mirror-girl-color-6: #F7A492;
+    --mirror-girl-color-7: #F57359;
+
+    --login-color-1: #D9EBFF;
+    --login-color-2: #FFD3B4;
+    --login-color-3: #D6E2B2;
+    --login-color-4: #FDF0D0;
+    --login-color-5: #EDCAB6;
+}
+
+color pallete {
+    /* --color:#ECECEC;
+    --color:#385A64;
+    --color:#FF735C;
+    --color:#FFFFFF;
+    --color:#B3B3B3;
+    --color:#C17460; */
+
+
+    --color: #FEE4D3;
+    --color: #E76B49;
+    --color: #F2A293;
+    --color: #B8BD7D;
+    --color: #9C9C82;
+    --color: #EDCAB6;
+    --color: #FFFAF4;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--login-color-1);
+    transition: .3s;
+}
+
+.wrapper {
+    /* border:1px solid black; */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff6a;
+    /* background-color: transparent; */
+    backdrop-filter: blur(5px);
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;  */
+    max-height: 100vh;
+}
+
+.container {
+    min-height: 70vh;
+    height: 100%;
+    padding-bottom: 20px;
+    width: 75vw;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid black; */
+    /* padding:10px; */
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 460px;
+    padding-bottom: 20px;
+    display: flex;
+    /* overflow-x: auto; */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    .singleImage {
+        width: 100%;
+        flex-shrink: 0;
+        height: 100%;
+        scroll-snap-align: start;
+
+        & img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .sliders {
+        display: none;
+    }
+}
+
+
+.login-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:1px solid black; */
+    justify-content: center;
+    text-align: center;
+    /* background-color: #FFFAF4; */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #4e4844;
+
+
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* I made changes hereeeeee */
+input {
+    height: 40px;
+    /* margin:10px 0px; */
+    padding: 10px;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+}
+
+.input-field {
+    /* border:1px solid violet; */
+    margin: 10px 0px;
+    text-align: start;
+}
+
+.error {
+    margin-left: 4px;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    max-width: 200px;
+}
+
+/* till hereeeeeee */
+/* okayyy */
+
+button {
+    width: 80%;
+    height: 40px;
+    /* background-color:#FF735C; */
+    background-color: #0075FF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #4e4844;
+}
+
+a {
+    color: #0075FF;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        flex-direction: row;
+        padding-bottom: 0px;
+    }
+
+    .img-wrapper {
+        max-height: none;
+        padding-bottom: 0;
+    }
+}

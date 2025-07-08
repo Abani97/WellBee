@@ -1,0 +1,36 @@
+
+@font-face{
+    font-family:"Chicken pie";
+    src:url('../media/fonts/CHICKEN-Pie.otf')
+}
+
+@font-face{
+    font-family: 'Puvi';
+    src:url('../media/fonts/OpenType-PS/Zoho Puvi Regular.otf')
+}
+
+@font-face {
+    font-family: "Puvi";
+    src: url("../media/fonts/OpenType-PS/Zoho Puvi Bold.otf");
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Puvi";
+    src: url("../media/fonts/OpenType-PS/Zoho Puvi Semibold.otf");
+    font-weight: 600;
+}
+
+
+/* @font-face {
+    font-family: "DejaVu Sans";
+    src: url("../media/fonts/DejaVuSans-Oblique.ttf");
+    font-style: oblique;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("../media/fonts/DejaVuSans-BoldOblique.ttf");
+    font-weight: bold;
+    font-style: oblique;
+} */

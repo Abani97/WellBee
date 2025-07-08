@@ -1,0 +1,467 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Puvi', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #442433;
+    color: #FFFCF4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.logo {
+    /* font-size: 20px;
+    font-weight:bold; */
+    height: 120px;
+    /* border:1px solid pink; */
+    width: 120px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    padding: 30px 45px;
+    /* border:1px solid yellow; */
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 44px;
+}
+
+.top-bar {
+    /* border:1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.search-profile-wrapper {
+    /* border:1px solid palegreen; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.user-profile {
+    height: 43px;
+    width: 43px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.user-profile img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.search-bar {
+    /* border:1px solid blueviolet; */
+    display: flex;
+    height: 42px;
+    width: 400px;
+    border-radius: 56px;
+    overflow: hidden;
+    margin: 20px 16px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    background-color: #F1F0F3;
+    color: #442433;
+    font-size: 18px;
+
+}
+
+.search-bar input::placeholder {
+    color: #442433;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-bar button {
+    font-size: 20px;
+    width: 60px;
+    padding: 4px 10px;
+    border: none;
+    background-color: #F1F0F3;
+    color: #442433;
+    /* border:1px solid black; */
+    /* background-color: #B1A4BB; */
+}
+
+
+.recently-opened {
+    /* border:1px solid blue; */
+    margin: 55px 0;
+}
+
+.recently-opened .wrapper-name {
+    font-size: 21px;
+    color: #747474;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.recent-journals-wrapper {
+    /* border:1px solid pink; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.r-journals {
+    height: 184px;
+    width: 277px;
+    /* border:1px solid black; */
+    border-radius: 18px;
+    background-color: #FFEBE5;
+    padding: 33px 21px;
+}
+
+.icons {
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.note-icon {
+    height: 36px;
+    width: 32px;
+    background-color: orange;
+}
+
+.emoji-icon {
+    height: 50px;
+    width: 50px;
+    /* background-color: #442433; */
+}
+
+.journal-details {
+    /* border:1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.j-title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #442433;
+}
+
+.j-date {
+    display: flex;
+    align-items: end;
+    gap: 4px;
+    color: #878787;
+    font-size: 16px;
+    /* border:1px solid blue; */
+}
+
+
+/* ---------------------------------------- */
+.journal-display {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.my-journals .wrapper-name {
+    font-size: 21px;
+    color: #442433;
+    margin-bottom: 29px;
+    padding-left: 10px;
+    font-weight: 600;
+    
+}
+
+.journals-wrapper {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    /* border:1px solid green; */
+    height:800px;
+    overflow:scroll;
+
+}
+
+.journals {
+    /* border:1px solid orange; */
+    padding: 20px 20px 30px;
+    background-color: #EDF2FF;
+    height: 350px;
+    width: 270px;
+    border-radius: 13px;
+}
+
+.j-date {
+    margin-bottom: 14px;
+}
+
+.journals>.j-title {
+    margin-bottom: 13px;
+}
+
+.journals>span {
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #EBEBEB;
+}
+
+.journal-content {
+    /* border:1px solid pink; */
+    height: 215px;
+    width: 215px;
+    color: #686868;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 21px;
+}
+
+
+.add-journal {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 37px 18px;
+    border: 2px dashed #674253;
+    border-radius: 14px;
+    color: #442433;
+    min-width:120px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(148deg, #EEF5FF 0%, #F0E4FF 100%);
+    /* border: 1px solid palegreen; */
+}
+
+.main-pane {
+    height: 100%;
+    width: 100%;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    /* border:1px solid purple; */
+}
+
+/* SIDE PANE CSS STARTSSSSS */
+.side-pane {
+    width: 20%;
+    height: 100%;
+    /* border:1px solid black; */
+    background-color: #68AEFF;
+    /* background-color:#442433; */
+    color: #FFFFFF;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    /* border:1px solid brown; */
+
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-pane {
+    /* border:1px solid pink; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.dashboard,
+.journal,
+.meditation-timer {
+    /* border:1px solid black; */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    gap: 32px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.icon {
+    height: 26px;
+    width: 26px;
+}
+
+.active-menu {
+    border: 2px solid white;
+}
+
+.welcome-wrapper {
+    /* border:1px solid pink; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+    margin-top: 120px;
+    width: 300px;
+
+}
+
+.welcome-msg {
+    line-height: 21px;
+    text-align: center;
+    word-spacing: 1.2;
+    letter-spacing: 1.2;
+    padding: 0 40px;
+}
+
+.top-bar {
+    /* border:1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.window-title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+.search-cta-wrapper {
+    /* border:1px solid palegreen; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+.search-bar {
+    /* border:1px solid blueviolet; */
+    display: flex;
+    height: 42px;
+    width: 400px;
+    border-radius: 56px;
+    overflow: hidden;
+    margin: 20px 16px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #442433;
+    font-size: 18px;
+
+}
+
+.search-bar input::placeholder {
+    color: #442433;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-bar button {
+    font-size: 20px;
+    width: 60px;
+    padding: 4px 10px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #442433;
+    /* border:1px solid black; */
+    /* background-color: #B1A4BB; */
+}
+
+.cta-btn button {
+    height: 45px;
+    border: none;
+    background-color: #2C74FF;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    border-radius: 40px;
+    font-size: 20px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Journal Entry</title>
+        <link rel="stylesheet" href="stylesheets/journalEntry.css" />
+        <link rel="stylesheet" href="stylesheets/fonts.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="media/logo.jpg">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <!-- WellBee -->
+                    <img src="media/logo.png" alt="" />
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="top-bar">
+                    <div class="left-wrapper">
+                        <div class="back-button" data-btn="back">
+                            <i class="fa-regular fa-circle-left" data-btn="back"></i>
+                        </div>
+                        <div class="entry-details">
+                            <div class="date">00</div>
+                            <!-- <span></span> -->
+                            <div class="day-month-wrapper">
+                                <div class="month">Month Year</div>
+                                <div class="day">Weekend</div>
+                            </div>
+                        </div>
+                        <div class="emoji-wrapper">
+                            <div class="emoji">
+                                <img src="media/emoji /weeping.svg" alt="" />
+                            </div>
+                            <div class="emojiList">
+                                <div class="emoji" data-emoji="happy">
+                                    <img src="media/emoji /happy.svg" alt="" data-emoji="happy" />
+                                </div>
+                                <div class="emoji" data-emoji="okayish">
+                                    <img
+                                        src="media/emoji /okayish.svg"
+                                        alt=""
+                                        data-emoji="okayish"
+                                    />
+                                </div>
+                                <div class="emoji" data-emoji="weeping">
+                                    <img
+                                        src="media/emoji /weeping.svg"
+                                        alt=""
+                                        data-emoji="weeping"
+                                    />
+                                </div>
+                                <div class="emoji" data-emoji="winking">
+                                    <img
+                                        src="media/emoji /winking.svg"
+                                        alt=""
+                                        data-emoji="winking"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-wrapper">
+                        <div class="color-choices">
+                            <div class="choice-1 choice active-choice" data-color="salmon"></div>
+                            <div class="choice-2 choice" data-color="sky"></div>
+                            <div class="choice-3 choice" data-color="purple"></div>
+                            <div class="choice-4 choice" data-color="green"></div>
+                        </div>
+
+                        <div class="save-btn">
+                            <button>Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entry-page">
+                    <input type="text" id="journalTitle" value="Journal Title" />
+                    <div id="editor"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="scripts/journalEntry.js" async defer></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/super-build/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.24.0-lts/standard/ckeditor.js"></script>
+</html>

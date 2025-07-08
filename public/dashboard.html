@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>You're probably logged in</h1>
+        <button type="button" >Log out</button>
+        
+        <script src="script.js" async defer></script>
+    </body>
+
+    <script>
+        const LOGOUT = document.querySelector("button");
+        LOGOUT.addEventListener("click", ()=>{
+            window.location.href = "/logout"
+        })
+    </script>
+</html>

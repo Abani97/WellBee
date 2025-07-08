@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Login To WellBee</title>
+        <link rel="stylesheet" href="stylesheets/login.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="media/logo.jpg" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="img-wrapper">
+                    <div id="image1" class="singleImage">
+                        <img src="media/Artboard 1.svg" alt="reading book" />
+                    </div>
+                    <div id="image2" class="singleImage">
+                        <img src="media/paid-client-using-wellbee.jpg" alt="" srcset="" />
+                    </div>
+                    <div id="image3" class="singleImage">
+                        <img src="media/pigeon.jpg" alt="" srcset="" />
+                    </div>
+                    <div id="image4" class="singleImage">
+                        <img src="media/she-looking-into-mirror.jpg" alt="" />
+                    </div>
+                    <div id="image5" class="singleImage">
+                        <img src="media/pretending-yoga.jpg" alt="" />
+                    </div>
+                    <div class="sliders">
+                        <a href="#image1"><i data-img="1" class="fa-solid fa-circle"></i></a>
+                        <a href="#image2"><i data-img="2" class="fa-regular fa-circle"></i></a>
+                        <a href="#image3"><i data-img="3" class="fa-regular fa-circle"></i></a>
+                        <a href="#image4"><i data-img="4" class="fa-regular fa-circle"></i></a>
+                        <a href="#image5"><i data-img="5" class="fa-regular fa-circle"></i></a>
+                    </div>
+                </div>
+                <div class="login-wrapper">
+                    <form method="post" id="form">
+                        <h1>Login</h1>
+                        <div class="inputs">
+                            <!-- i made changes from hereeeeee -->
+                            <div class="input-field">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="user@example.com"
+                                    id="email"
+                                />
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-field">
+                                <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="Password"
+                                    id="password"
+                                />
+                                <div class="error"></div>
+                            </div>
+                            <!-- till hereeee -->
+                        </div>
+                        <button type="submit">Login</button>
+                        <p>
+                            Don't have an account?
+                            <a href="/signup">Signup</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/login.js"></script>
+        <script src="scripts/carousel.js" async defer></script>
+    </body>
+</html>

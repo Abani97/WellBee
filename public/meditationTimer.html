@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WellBee: Meditation</title>
+        <link rel="stylesheet" href="stylesheets/meditationTimer.css" />
+        <link rel="stylesheet" href="stylesheets/fonts.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" type="image/x-icon" href="media/logo.jpg" />
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- side pane -->
+            <div class="side-pane">
+                <div class="logo">
+                    <img src="./media/logo.png" alt="" />
+                </div>
+                <div class="menu-pane">
+                    <div class="dashboard" data-id="dashboard">
+                        <img
+                            src="./media/svg files/svg-icons/dashboard.svg"
+                            data-id="dashboard"
+                            alt=""
+                            class="icon"
+                        />
+                        <p data-id="dashboard">Dashboard</p>
+                    </div>
+                    <div class="journal" data-id="journal">
+                        <img src="./media/svg files/svg-icons//journal.svg" alt="" data-id="journal" class="icon" />
+                        <p data-id="journal">Journal</p>
+                    </div>
+                    <div class="meditation-timer active-menu" data-id="meditation-timer">
+                        <img
+                            src="./media/svg files/svg-icons/med-timer.svg"
+                            alt=""
+                            data-id="meditation-timer"
+                            class="icon"
+                        />
+                        <p data-id="meditation-timer">Meditation Timer</p>
+                    </div>
+                </div>
+                <div class="welcome-wrapper">
+                    <div class="welcome-girl">
+                        <img
+                            src="./media/svg files/svg-icons/well be web ui illustration 1welcome-girl.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="welcome-msg">
+                        Ready to change towards a healthier, happier you? Explore our
+                        <a href="./home.html">website</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-pane">
+                <div class="top-bar">
+                    <div class="window-title">Meditation Timer</div>
+
+                    <!-- <div class="search-cta-wrapper">
+                        <div class="search-bar">
+                            <input
+                                type="text"
+                                id="input-box"
+                                placeholder="Search"
+                                autocomplete="off"
+                            />
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="cta-btn">
+                            <button>Add Habit +</button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="wrapper">
+                    <div class="m-settings-pane">
+                        <div class="m-settings-wrapper">
+                            <div class="m-image">
+                                <img src="media/svg files/svg-images-meditation/open.svg" alt="" />
+                            </div>
+                            <div class="m-description">
+                                <div class="m-title">Open Sky meditation</div>
+                                <div class="m-content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                    suscipit facere quos incidunt amet, consectetur doloremque nam
+                                    pariatur ex dolore qui accusamus non laboriosam accusantium
+                                    magnam rerum inventore voluptatibus obcaecati?
+                                </div>
+                            </div>
+                            <div class="m-setting-choices">
+                                <div class="twoOptions">
+                                    <div class="customCheck">
+                                        <label class="pointer" for="zenmode">Zen Mode</label>
+                                        <input type="checkbox" name="zenmode" id="zenmode" />
+                                    </div>
+                                    <div class="customCheck">
+                                        <label class="pointer" for="music">Music</label>
+                                        <input type="checkbox" name="music" id="music" />
+                                    </div>
+                                </div>
+                                <div class="singleOption">
+                                    <p>Choose Time:</p>
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        max="60"
+                                        id="meditationTime"
+                                        value="10"
+                                        title="Min 1 and Max 60 min"
+                                    />
+                                    <p>Minutes</p>
+                                </div>
+                            </div>
+
+                            <div class="start-button" data-meditation="open">Start Timer</div>
+                        </div>
+                    </div>
+                    <div class="m-explore-pane">
+                        <h1>Explore Meditations</h1>
+                        <p>
+                            Embark on a journey through diverse meditation practices to cultivate
+                            tranquility in your mind and nurture your inner peace.
+                        </p>
+                        <div class="allMeditations">
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/sea.svg" />
+                                <p>Floating Soul</p>
+                                <button type="button" data-meditation="sea">Play</button>
+                            </div>
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/forest.svg" />
+                                <p>Rainforest</p>
+                                <button type="button" data-meditation="forest">Play</button>
+                            </div>
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/pochita.svg" />
+                                <p>Childhood</p>
+                                <button type="button" data-meditation="pochita">Play</button>
+                            </div>
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/bird.svg" />
+                                <p>Peace</p>
+                                <button type="button" data-meditation="bird">Play</button>
+                            </div>
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/cloudy.svg" />
+                                <p>Head in the Clouds</p>
+                                <button type="button" data-meditation="cloudy">Play</button>
+                            </div>
+                            <div class="singleMeditation">
+                                <img src="media/svg files/svg-images-meditation/pink.svg" />
+                                <p>Pink tree in the middle of a desert</p>
+                                <button type="button" data-meditation="pink">Play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timerWrapper">
+                    <div class="timerDarker"></div>
+                    <div class="topControls" id="quit">
+                        <i
+                            class="fa-solid fa-arrow-left pointer"
+                            title="Quit Meditation"
+                            id="quit"
+                        ></i>
+                    </div>
+                    <div class="timerDiv">
+                        <div class="realTimerFinalVersionV2">
+                            <span class="minutes">10</span>
+                            <span>:</span>
+                            <!--I added a span for the colon because the colon looked lonely-->
+                            <span class="seconds">00</span>
+                        </div>
+                        <button type="button" class="pointer pauseResume">
+                            <span>Pause</span> <i class="fa-solid fa-pause"></i>
+                        </button>
+                    </div>
+
+                    <!-- To bring the timer in the middle with some spacing with space-between, added some dummy divs -->
+                    <div class="dummy"></div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/meditationTimer.js"></script>
+    </body>
+</html>
